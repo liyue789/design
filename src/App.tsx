@@ -16,12 +16,15 @@ import {
   Sparkles,
   Paperclip,
   Mic,
-  ArrowUp
+  ArrowUp,
+  MousePointerClick,
+  Type,
+  Cpu
 } from 'lucide-react';
 import { DESIGN_SITES, DesignSite } from './constants';
 
 export default function App() {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'mainstream' | 'tools' | 'assets'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -37,7 +40,10 @@ export default function App() {
 
   const categories = [
     { id: 'all', name: '万象灵感', icon: Compass, description: '汇聚全球创意，探索无限可能' },
+    { id: 'ai', name: '智绘视界', icon: Cpu, description: 'AI 驱动视觉，重塑创意边界' },
     { id: 'mainstream', name: '创意基石', icon: Layout, description: '主流设计平台，构建专业视野' },
+    { id: 'interaction', name: '交互视界', icon: MousePointerClick, description: '前沿交互灵感，探索动态美学' },
+    { id: 'fonts', name: '字里行间', icon: Type, description: '精选国内外字体，赋予文字灵魂' },
     { id: 'tools', name: '匠心利器', icon: Wrench, description: '高效生产工具，释放创作潜能' },
     { id: 'assets', name: '光影素材', icon: ImageIcon, description: '精选素材资源，点亮设计细节' },
   ] as const;
@@ -174,6 +180,9 @@ export default function App() {
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                     {site.category === 'mainstream' && <Layout className="w-7 h-7 text-orange-300" />}
+                    {site.category === 'interaction' && <MousePointerClick className="w-7 h-7 text-purple-300" />}
+                    {site.category === 'ai' && <Cpu className="w-7 h-7 text-cyan-300" />}
+                    {site.category === 'fonts' && <Type className="w-7 h-7 text-rose-300" />}
                     {site.category === 'tools' && <Palette className="w-7 h-7 text-blue-300" />}
                     {site.category === 'assets' && <ImageIcon className="w-7 h-7 text-emerald-300" />}
                   </div>

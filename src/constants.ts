@@ -3,7 +3,7 @@ export interface DesignSite {
   url: string;
   description: string;
   tags: string[];
-  category: 'mainstream' | 'tools' | 'assets';
+  category: 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai';
 }
 
 export const DESIGN_SITES: DesignSite[] = [
@@ -49,6 +49,57 @@ export const DESIGN_SITES: DesignSite[] = [
     description: "图片分享与灵感收集平台，支持创建情绪板（Mood Board）。",
     tags: ["灵感", "收集", "素材"],
     category: 'mainstream'
+  },
+
+  // UI/UX & Interaction
+  {
+    name: "Mobbin",
+    url: "https://mobbin.com",
+    description: "全球最大的移动及网页应用 UI/UX 设计灵感库，收录数千款应用的真实截图。",
+    tags: ["UI/UX", "移动端", "模式"],
+    category: 'interaction'
+  },
+  {
+    name: "Awwwards",
+    url: "https://www.awwwards.com",
+    description: "网页设计奖项与灵感平台，评选全球最具创意与技术含量的网页设计案例。",
+    tags: ["网页", "奖项", "交互"],
+    category: 'interaction'
+  },
+  {
+    name: "Godly",
+    url: "https://godly.website",
+    description: "汇集全球最顶尖、最具交互感的现代网页设计，风格前卫，动效精美。",
+    tags: ["网页", "动效", "前卫"],
+    category: 'interaction'
+  },
+  {
+    name: "UI Movement",
+    url: "https://uimovement.com",
+    description: "专注于 UI 动效设计灵感，收集来自全球设计师的优秀 UI 动画案例。",
+    tags: ["动效", "动画", "灵感"],
+    category: 'interaction'
+  },
+  {
+    name: "UI Sources",
+    url: "https://www.uisources.com",
+    description: "深度分析知名产品的 UI/UX 设计，提供完整的产品流程截图与设计模式解读。",
+    tags: ["UX", "分析", "模式"],
+    category: 'interaction'
+  },
+  {
+    name: "Hoverstat.es",
+    url: "https://hoverstat.es",
+    description: "优秀的交互设计与动效灵感集合，专注于网页中的微交互与独特动效。",
+    tags: ["交互", "微动效", "网页"],
+    category: 'interaction'
+  },
+  {
+    name: "Land-book",
+    url: "https://land-book.com",
+    description: "精选全球优秀的落地页（Landing Page）设计画廊，涵盖多种行业与风格。",
+    tags: ["落地页", "网页", "画廊"],
+    category: 'interaction'
   },
 
   // Creative Tools
@@ -136,7 +187,56 @@ export const DESIGN_SITES: DesignSite[] = [
     url: "https://fonts.google.com",
     description: "免费开源字体检索与下载平台，支持按语言/字重/风格筛选。",
     tags: ["字体", "Google", "开源"],
-    category: 'assets'
+    category: 'fonts'
+  },
+  {
+    name: "字由 (HelloFont)",
+    url: "https://www.hellofont.cn/",
+    description: "设计师必备字体利器，集成上千款正版字体，支持一键激活至设计软件。",
+    tags: ["字体", "国产", "工具"],
+    category: 'fonts'
+  },
+  {
+    name: "100Font",
+    url: "https://www.100font.com/",
+    description: "专门收集整理免费商用字体的网站，分类清晰，让版权无忧。",
+    tags: ["字体", "免费", "商用"],
+    category: 'fonts'
+  },
+  {
+    name: "猫啃网",
+    url: "https://www.maoken.com/",
+    description: "专注于中文字体分享，特别是免费商用字体的深度测评与下载。",
+    tags: ["字体", "测评", "免费"],
+    category: 'fonts'
+  },
+  {
+    name: "DaFont",
+    url: "https://www.dafont.com/",
+    description: "全球知名的免费字体下载站，分类极其详尽，涵盖各种创意风格。",
+    tags: ["字体", "国际", "创意"],
+    category: 'fonts'
+  },
+  {
+    name: "Font Squirrel",
+    url: "https://www.fontsquirrel.com/",
+    description: "严选高质量免费商用字体，提供方便的 Webfont 生成器。",
+    tags: ["字体", "商用", "Webfont"],
+    category: 'fonts'
+  },
+  {
+    name: "Adobe Fonts",
+    url: "https://fonts.adobe.com/",
+    description: "Adobe 官方字体库，与 Creative Cloud 深度集成，品质极高且商用安全。",
+    tags: ["字体", "Adobe", "专业"],
+    category: 'fonts'
+  },
+  {
+    name: "字体家",
+    url: "https://www.zitijia.com/",
+    description: "提供各类创意字体、毛笔书法字体下载，支持在线预览与定制。",
+    tags: ["字体", "书法", "创意"],
+    category: 'fonts'
   },
   {
     name: "LottieFiles",
@@ -144,5 +244,63 @@ export const DESIGN_SITES: DesignSite[] = [
     description: "Lottie 格式动态图标（JSON 动画文件），超 1000 款动效图标。",
     tags: ["动效", "Lottie", "动画"],
     category: 'assets'
+  },
+  
+  // AI Visual & Generative
+  {
+    name: "Variant",
+    url: "https://variant.com",
+    description: "AI 驱动的设计探索与社区平台，连接创意与前沿生成技术。",
+    tags: ["AI", "设计", "社区"],
+    category: 'ai'
+  },
+  {
+    name: "Midjourney",
+    url: "https://www.midjourney.com",
+    description: "目前全球艺术表现力最强的 AI 绘画工具，以极高的审美水准著称。",
+    tags: ["AI", "绘画", "艺术"],
+    category: 'ai'
+  },
+  {
+    name: "Leonardo.ai",
+    url: "https://leonardo.ai",
+    description: "功能强大的 AI 图像生成平台，支持模型微调、画布编辑及多种艺术风格。",
+    tags: ["AI", "生成", "专业"],
+    category: 'ai'
+  },
+  {
+    name: "Lexica",
+    url: "https://lexica.art",
+    description: "Stable Diffusion 提示词搜索引擎，提供海量图片及其对应的生成指令。",
+    tags: ["AI", "搜索", "提示词"],
+    category: 'ai'
+  },
+  {
+    name: "Krea.ai",
+    url: "https://www.krea.ai",
+    description: "实时 AI 生成与增强工具，支持实时画笔同步生成，极具交互感。",
+    tags: ["AI", "实时", "增强"],
+    category: 'ai'
+  },
+  {
+    name: "Liblib.art",
+    url: "https://www.liblib.art",
+    description: "国内领先的 AI 艺术创作社区，拥有海量 Stable Diffusion 模型资源。",
+    tags: ["AI", "国产", "模型"],
+    category: 'ai'
+  },
+  {
+    name: "Playground AI",
+    url: "https://playgroundai.com",
+    description: "简单易用的在线 AI 创作平台，集成了多种主流生成模型与编辑功能。",
+    tags: ["AI", "在线", "创作"],
+    category: 'ai'
+  },
+  {
+    name: "Adobe Firefly",
+    url: "https://www.adobe.com/products/firefly.html",
+    description: "Adobe 官方创意生成 AI，深度集成于 PS/AI 等软件，商用安全。",
+    tags: ["AI", "Adobe", "商用"],
+    category: 'ai'
   }
 ];
