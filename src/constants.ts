@@ -3,7 +3,7 @@ export interface DesignSite {
   url: string;
   description: string;
   tags: string[];
-  category: 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai';
+  category: 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai' | 'editorial';
 }
 
 export const DESIGN_SITES: DesignSite[] = [
@@ -48,6 +48,41 @@ export const DESIGN_SITES: DesignSite[] = [
     url: "https://www.pinterest.com",
     description: "图片分享与灵感收集平台，支持创建情绪板（Mood Board）。",
     tags: ["灵感", "收集", "素材"],
+    category: 'mainstream'
+  },
+  {
+    name: "站酷 (Zcool)",
+    url: "https://www.zcool.com.cn/",
+    description: "中国最具影响力的设计师互动平台，汇聚了海量优秀原创设计作品。",
+    tags: ["社区", "国产", "综合"],
+    category: 'mainstream'
+  },
+  {
+    name: "UI中国",
+    url: "https://www.ui.cn/",
+    description: "专业的用户体验设计平台，专注于 UI/UX 设计交流与作品展示。",
+    tags: ["UI/UX", "社区", "国产"],
+    category: 'mainstream'
+  },
+  {
+    name: "设计达人",
+    url: "https://www.shejidaren.com/",
+    description: "分享设计干货、教程、灵感与资源的知名设计博客。",
+    tags: ["干货", "教程", "灵感"],
+    category: 'mainstream'
+  },
+  {
+    name: "优优教程网",
+    url: "https://uiiiuiii.com/",
+    description: "优秀的 UI 设计教程与灵感平台，提供海量免费设计视频与图文教程。",
+    tags: ["教程", "学习", "UI"],
+    category: 'mainstream'
+  },
+  {
+    name: "68Design",
+    url: "https://www.68design.net/",
+    description: "互联网设计师招聘与作品展示平台，国内老牌设计门户。",
+    tags: ["招聘", "作品", "社区"],
     category: 'mainstream'
   },
 
@@ -101,6 +136,27 @@ export const DESIGN_SITES: DesignSite[] = [
     tags: ["落地页", "网页", "画廊"],
     category: 'interaction'
   },
+  {
+    name: "Material Design",
+    url: "https://m3.material.io/",
+    description: "Google 官方设计规范，提供完整的跨平台设计语言与组件指南。",
+    tags: ["规范", "Google", "UI"],
+    category: 'interaction'
+  },
+  {
+    name: "Human Interface Guidelines",
+    url: "https://developer.apple.com/design/human-interface-guidelines/",
+    description: "Apple 官方设计指南，涵盖 iOS、macOS 等全平台的交互与视觉标准。",
+    tags: ["规范", "Apple", "交互"],
+    category: 'interaction'
+  },
+  {
+    name: "Ant Design",
+    url: "https://ant.design/",
+    description: "蚂蚁金服的企业级 UI 设计语言，拥有极其丰富的 React 组件库。",
+    tags: ["规范", "组件库", "阿里"],
+    category: 'interaction'
+  },
 
   // Creative Tools
   {
@@ -150,6 +206,13 @@ export const DESIGN_SITES: DesignSite[] = [
     url: "https://paletton.com",
     description: "经典配色工具，支持单色/互补/三色等多种配色模式。",
     tags: ["配色", "理论", "工具"],
+    category: 'tools'
+  },
+  {
+    name: "WebGradients",
+    url: "https://webgradients.com/",
+    description: "180 个精美的线性渐变配色方案，支持 CSS 代码一键复制。",
+    tags: ["渐变", "配色", "代码"],
     category: 'tools'
   },
 
@@ -245,6 +308,27 @@ export const DESIGN_SITES: DesignSite[] = [
     tags: ["动效", "Lottie", "动画"],
     category: 'assets'
   },
+  {
+    name: "Flaticon",
+    url: "https://www.flaticon.com/",
+    description: "全球最大的免费矢量图标库，提供海量 SVG、PNG 格式图标。",
+    tags: ["图标", "矢量", "免费"],
+    category: 'assets'
+  },
+  {
+    name: "Font Awesome",
+    url: "https://fontawesome.com/",
+    description: "广受欢迎的图标字体库，提供数千款可缩放的矢量图标。",
+    tags: ["图标", "字体", "矢量"],
+    category: 'assets'
+  },
+  {
+    name: "Pixabay",
+    url: "https://pixabay.com/",
+    description: "免费正版高清图片、视频素材库，所有资源均可免费商用。",
+    tags: ["图片", "视频", "免费"],
+    category: 'assets'
+  },
   
   // AI Visual & Generative
   {
@@ -302,5 +386,98 @@ export const DESIGN_SITES: DesignSite[] = [
     description: "Adobe 官方创意生成 AI，深度集成于 PS/AI 等软件，商用安全。",
     tags: ["AI", "Adobe", "商用"],
     category: 'ai'
+  },
+
+  // Editorial & Master Portfolios
+  {
+    name: "It's Nice That",
+    url: "https://www.itsnicethat.com/",
+    description: "全球最具影响力的创意艺术媒体，挖掘并分享最前沿的设计、艺术与创意故事。",
+    tags: ["艺术", "创意", "媒体"],
+    category: 'editorial'
+  },
+  {
+    name: "BP&O",
+    url: "https://bpando.org/",
+    description: "专注于品牌视觉、包装设计与深度评论，以极高的审美标准和专业分析著称。",
+    tags: ["品牌", "包装", "评论"],
+    category: 'editorial'
+  },
+  {
+    name: "SiteInspire",
+    url: "https://www.siteinspire.com/",
+    description: "精选全球最具交互创意与视觉美感的网页设计案例，是网页设计师的灵感圣地。",
+    tags: ["网页", "灵感", "精选"],
+    category: 'editorial'
+  },
+  {
+    name: "Eye on Design (AIGA)",
+    url: "https://eyeondesign.aiga.org/",
+    description: "AIGA 旗下的设计媒体，深入探讨设计背后的文化、社会意义与行业趋势。",
+    tags: ["文化", "趋势", "深度"],
+    category: 'editorial'
+  },
+  {
+    name: "Tobias van Schneider",
+    url: "https://vanschneider.com/",
+    description: "前 Spotify 首席设计师的个人网站，分享深刻的设计见解、作品与创意哲学。",
+    tags: ["大师", "博客", "哲学"],
+    category: 'editorial'
+  },
+  {
+    name: "Claudio Guglieri",
+    url: "https://guglieri.com/",
+    description: "前 Microsoft/Apple 设计总监的个人作品集，展示顶尖的视觉表现力与交互思维。",
+    tags: ["大师", "视觉", "UI"],
+    category: 'editorial'
+  },
+  {
+    name: "Anton & Irene",
+    url: "https://antonandirene.com/",
+    description: "纽约知名设计工作室，以独特的交互体验和极具张力的视觉风格闻名业界。",
+    tags: ["工作室", "交互", "视觉"],
+    category: 'editorial'
+  },
+  {
+    name: "Creative Boom",
+    url: "https://www.creativeboom.com/",
+    description: "为创意人提供灵感、资源与职业建议的综合性艺术设计媒体。",
+    tags: ["创意", "艺术", "媒体"],
+    category: 'editorial'
+  },
+  {
+    name: "潘虎设计实验室",
+    url: "https://www.tigerpan.com/",
+    description: "中国顶尖产品包装设计实验室，以极具艺术感染力的商业包装作品闻名。",
+    tags: ["包装", "艺术", "大师"],
+    category: 'editorial'
+  },
+  {
+    name: "Tencent ISUX",
+    url: "https://isux.tencent.com/",
+    description: "腾讯社交用户体验设计部，国内顶尖的互联网设计团队，引领行业趋势。",
+    tags: ["大厂", "UX", "趋势"],
+    category: 'editorial'
+  },
+  {
+    name: "Alibaba Design",
+    url: "https://www.alibabadesign.com/",
+    description: "阿里巴巴设计官方门户，汇集了阿里系全产品的设计规范与前沿探索。",
+    tags: ["大厂", "系统", "设计"],
+    category: 'editorial'
+  },
+  {
+    name: "A Black Cover Design (ABCD)",
+    url: "http://ablackcover.com/",
+    description: "国内顶尖平面设计工作室，以极简、理性的设计风格在业界享有盛誉。",
+    tags: ["平面", "极简", "工作室"],
+    category: 'editorial'
+  },
+  {
+    name: "LAVA Beijing",
+    url: "http://www.lavabeijing.com/",
+    description: "跨国创意工作室北京分部，风格活泼、实验性强，擅长品牌与视觉传达。",
+    tags: ["创意", "实验", "视觉"],
+    category: 'editorial'
   }
 ];

@@ -19,12 +19,13 @@ import {
   ArrowUp,
   MousePointerClick,
   Type,
-  Cpu
+  Cpu,
+  BookOpen
 } from 'lucide-react';
 import { DESIGN_SITES, DesignSite } from './constants';
 
 export default function App() {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'mainstream' | 'tools' | 'assets' | 'interaction' | 'fonts' | 'ai' | 'editorial'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -40,6 +41,7 @@ export default function App() {
 
   const categories = [
     { id: 'all', name: '万象灵感', icon: Compass, description: '汇聚全球创意，探索无限可能' },
+    { id: 'editorial', name: '深度视界', icon: BookOpen, description: '大师作品与深度评论，触及设计灵魂' },
     { id: 'ai', name: '智绘视界', icon: Cpu, description: 'AI 驱动视觉，重塑创意边界' },
     { id: 'mainstream', name: '创意基石', icon: Layout, description: '主流设计平台，构建专业视野' },
     { id: 'interaction', name: '交互视界', icon: MousePointerClick, description: '前沿交互灵感，探索动态美学' },
@@ -181,6 +183,7 @@ export default function App() {
                   <div className="w-14 h-14 bg-white shadow-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                     {site.category === 'mainstream' && <Layout className="w-7 h-7 text-orange-300" />}
                     {site.category === 'interaction' && <MousePointerClick className="w-7 h-7 text-purple-300" />}
+                    {site.category === 'editorial' && <BookOpen className="w-7 h-7 text-amber-300" />}
                     {site.category === 'ai' && <Cpu className="w-7 h-7 text-cyan-300" />}
                     {site.category === 'fonts' && <Type className="w-7 h-7 text-rose-300" />}
                     {site.category === 'tools' && <Palette className="w-7 h-7 text-blue-300" />}
